@@ -69,9 +69,9 @@ const useStyles = makeStyles (theme =>  ({
   },
   timeLineYear: {
     textAlign: "center",
-    maxWidth: "9.375rem",
+    maxWidth: "9.575rem",
     margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
+    fontSize: "1.1rem",
     background: "tomato",
     color: "white",
     lineHeight: 1,
@@ -115,21 +115,22 @@ const Resume = () => {
         </Typography>
 
         <Box component="div" className={classes.timeLine}>
-          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2010</Typography>
 
+        <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2014 - Current</Typography>
+          
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" align="center" className={classes.subHeading}>
-              C# Developer
+              Self-Employed
             </Typography>
             <Typography variant="body1" align="center" style={{color: "tomato"}}>
-              R2Tech
+              Web Developer and SEO
             </Typography>
             <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
-              Assisted senior developer with testing and development of new reconciliation and accounting of receivables product for airlines companies. Working with Genexus framework application.
+              Full Stack E-commerce Development with modern technologies like MERN (MongoDB, Express, React & Node). Digital marketing strategies involving SEO, Landing-Page Optimisation, Link-Building.
             </Typography>
           </Box>
 
-          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2012</Typography>
+          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2012 - 2014</Typography>
           
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" align="center" className={classes.subHeading}>
@@ -143,17 +144,33 @@ const Resume = () => {
             </Typography>
           </Box>
 
-          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2014</Typography>
-          
+
+
+          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2010 - 2012</Typography>
+
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" align="center" className={classes.subHeading}>
-              Self-Employed
+              C# Developer
             </Typography>
             <Typography variant="body1" align="center" style={{color: "tomato"}}>
-              Web Developer and SEO
+              R2Tech
             </Typography>
             <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
-              Full Stack E-commerce Development with modern technologies like MERN (MongoDB, Express, React & Node). Digital marketing strategies involving SEO, Landing-Page Optimisation, Link-Building.
+              Assisted senior developer with testing and development of new reconciliation and accounting of receivables product for airlines companies. Working with Genexus framework application.
+            </Typography>
+          </Box>
+
+          <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>2009 - 2010</Typography>
+
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography variant="h5" align="center" className={classes.subHeading}>
+              Support Internship
+            </Typography>
+            <Typography variant="body1" align="center" style={{color: "tomato"}}>
+              GXS Brasil S/A
+            </Typography>
+            <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
+              Analysis, diagnosis, customer support and problem solving, sending electronic corrections, conducting connection checklists in a b2b integration service.
             </Typography>
           </Box>
 

@@ -23,6 +23,7 @@ import {
   ContactMail
 } from "@material-ui/icons";
 import avatar from "../avatar.png";
+import Footer from "./Footer";
 
 // CSS STYLES
 const useStyles = makeStyles (theme=>({
@@ -81,8 +82,7 @@ const Navbar = () => {
 
   const sideList = slider => (
     <Box className={classes.menuSliderContainer} component="div"
-    onClick={toggleSlider(slider,false)}
-    >
+    onClick={toggleSlider(slider,false)}>
     <Avatar className={classes.avatar} src={avatar} alt="Marcelo Brito" />
     <Divider />
     <List>
@@ -108,6 +108,7 @@ const Navbar = () => {
           <Typography variant="h5" style={{ color: "tan" }}>Portfolio</Typography>
           <MobilRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)}>
             {sideList("right")}
+          <Footer />
           </MobilRightMenuSlider>
         </Toolbar>
       </AppBar>
