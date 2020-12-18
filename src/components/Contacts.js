@@ -1,7 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import { TextField, Typography, Box, Button, Grid } from "@material-ui/core";
-import { ValidatorForm, TextValidator} from "react-material-ui-form-validator";
+import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import SendIcon from "@material-ui/icons/Send";
 import Axios from "axios";
 import Navbar from "./Navbar";
@@ -107,7 +107,7 @@ class Contacts extends React.Component {
     Axios.post('http://localhost:3030/send', this.state)
       .then(res => {
         console.log(res.data);
-        if(res.data.err) {
+        if(res.data.status === 'fail') {
           this.setState({
             disabled: false,
             emailsent: false
@@ -115,7 +115,7 @@ class Contacts extends React.Component {
         } else {
           this.setState({
             disabled: false,
-            emailsent: true 
+            emailsent: true
           });
         }
       })  
@@ -149,8 +149,8 @@ class Contacts extends React.Component {
                 contact me
               </Button>
               <br />
-              {this.state.emailsent === true && <p className={classes.success}>E-mail Sent</p>}
-              {this.state.emailsent === false && <p className={classes.err}>E-mail Not Sent</p>}
+              {this.state.emailsent === true && <p className={classes.success}>E-mail Sent.</p>}
+              {this.state.emailsent === false && <p className={classes.err}>E-mail Not Sent.</p>}
           </ValidatorForm>
         </Grid>      
       </Box>

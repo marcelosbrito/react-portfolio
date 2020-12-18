@@ -11,10 +11,12 @@ import {
   CardMedia,
   Button } from "@material-ui/core";
 import Navbar from "./Navbar";
-import project1 from "../images/html-css-javascript-lg.jpg"
+import project1 from "../images/mern-stack.jpg"
 import project2 from "../images/javascript-fullstack.jpg"
 import project3 from "../images/react-redux.jpg"
-import project4 from "../images/mern-stack.jpg"
+import project4 from "../images/html-css-javascript-lg.jpg"
+import project5 from "../images/sass_.png"
+import project6 from "../images/html-css.jpg"
 
 const useStyles = makeStyles ({
   mainContainer: {
@@ -33,7 +35,8 @@ const Portfolio = () => {
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
       <Grid container justify="center">
-        <Grid item xs={12} sm={8} md={6}>
+
+      <Grid item xs={12} sm={8} md={6}>
           {/* Project 1 */}
           <Card className={classes.cardContainer}>
             <CardActionArea>
@@ -48,13 +51,13 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>  
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
+                  Github
                 </Button>
-                <Button size="small" color="primary">
+                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
                   Live Demo
                 </Button>
-              </CardActions>
+              </CardActions> 
           </Card>
         </Grid>
 
@@ -73,10 +76,10 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
+                  Github
                 </Button>
-                <Button size="small" color="primary">
+                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
                   Live Demo
                 </Button>
               </CardActions>  
@@ -98,10 +101,10 @@ const Portfolio = () => {
               </CardContent>
             </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
+                  Github
                 </Button>
-                <Button size="small" color="primary">
+                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
                   Live Demo
                 </Button>
               </CardActions>  
@@ -112,21 +115,71 @@ const Portfolio = () => {
           {/* Project 4 */}
           <Card className={classes.cardContainer}>
             <CardActionArea>
-              <CardMedia component="img" alt="Project 4" height="140" image={project4} />
+              <CardMedia component="img" alt="To Do List" height="140" image={project4} />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                Project 4
+                  To Do List
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo illum est excepturi, tempora tenetur.
+                  This is a ToDo List created with HTML, CSS and JavaScript.
                 </Typography>
               </CardContent>
             </CardActionArea>  
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button href="https://github.com/marcelosbrito/todo-list" target="_blank" rel="noopener" size="small" color="primary">
+                  Github
                 </Button>
-                <Button size="small" color="primary">
+                <Button href="https://marcelosbrito.github.io/todo-list/" target="_blank" rel="noopener" size="small" color="primary">
+                  Live Demo
+                </Button>
+              </CardActions>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={8} md={6}>
+          {/* Project 5 */}
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia component="img" alt="Sass" height="140" image={project5} />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Sass Portfolio
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  Responsive Portfolio Web Site created with SASS & JS.
+                </Typography>
+              </CardContent>
+            </CardActionArea>  
+              <CardActions>
+                <Button href="https://github.com/marcelosbrito/marcelobrito-portfolio" target="_blank" rel="noopener" size="small" color="primary">
+                  Github
+                </Button>
+                <Button href="https://marcelosbrito.github.io/marcelobrito-portfolio/" target="_blank" rel="noopener" size="small" color="primary">
+                  Live Demo
+                </Button>
+              </CardActions> 
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={8} md={6}>
+          {/* Project 6 */}
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia component="img" alt="HTML-CSS" height="140" image={project6} />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Business Front-End
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  This is a reponsive Business Front-End Web Site created with HTML & CSS-Grids.
+                </Typography>
+              </CardContent>
+            </CardActionArea>  
+              <CardActions>
+                <Button href="#https://github.com/marcelosbrito/css-grid" target="_blank" rel="noopener" size="small" color="primary">
+                  Github
+                </Button>
+                <Button href="https://marcelosbrito.github.io/css-grid/" target="_blank" rel="noopener" size="small" color="primary">
                   Live Demo
                 </Button>
               </CardActions> 
