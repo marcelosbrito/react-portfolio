@@ -104,7 +104,7 @@ class Contacts extends React.Component {
       disabled: true
     });
 
-    Axios.post('http://localhost:3030/send', this.state)
+    Axios.post('https://us-central1-portfolio-44c8a.cloudfunctions.net/app/send', this.state)
       .then(res => {
         console.log(res.data);
         if(res.data.status === 'fail') {
