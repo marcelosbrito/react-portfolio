@@ -10,10 +10,22 @@ build:
     - npm install
     - npm run build
 
-deploy:
+deploy-development:
   stage: deploy
+  only: development
   script:
     - npm install
     - npm run build
     - firebase use portfolio-44c8a --token $FIREBASE_TOKEN
-    - firebase deploy --only hosting -m "Pipeline $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
+    - firebase target:apply hosting development portfolio-dev-beta
+    - firebase deploy --only hosting:development -m "Pipeline $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
+
+deploy-production:
+  stage: deploy
+  only: master
+  script:
+    - npm install
+    - npm run build
+    - firebase use portfolio-44c8a --token $FIREBASE_TOKEN
+    - firebase target:apply hosting production portfolio-44c8a
+    - firebase deploy --only hosting:production -m "Pipeline $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
