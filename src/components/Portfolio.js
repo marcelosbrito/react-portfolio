@@ -43,18 +43,18 @@ const Portfolio = () => {
               <CardMedia component="img" alt="Project 1" height="140" image={project1} />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                Project 1
+                Exercise Tracker
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci explicabo illum est excepturi, tempora tenetur.
+                This is a exercise tracker APP. Created with: MongoDB, Expresss, React and Node.js, Firebase deploy, POSTMAN and CI/CD pipeline with Gitlab.
                 </Typography>
               </CardContent>
             </CardActionArea>  
               <CardActions>
-                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
+                <Button href="https://github.com/marcelosbrito/mern-exercise-traker" target="_blank" rel="noopener" size="small" color="primary">
                   Github
                 </Button>
-                <Button href="#" target="_blank" rel="noopener" size="small" color="primary">
+                <Button href="https://mern-exercise-tracker.firebaseapp.com/" target="_blank" rel="noopener" size="small" color="primary">
                   Live Demo
                 </Button>
               </CardActions> 
@@ -121,7 +121,7 @@ const Portfolio = () => {
                   To Do List
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  This is a ToDo List created with HTML, CSS and JavaScript.
+                  This is a ToDo List created with HTML, CSS and JavaScript, using Document Object Model, Events and Functions.
                 </Typography>
               </CardContent>
             </CardActionArea>  
@@ -181,6 +181,9 @@ const Portfolio = () => {
                 </Button>
                 <Button href="https://marcelosbrito.github.io/css-grid/" target="_blank" rel="noopener" size="small" color="primary">
                   Live Demo
+                </Button>
+                <Button href="https://marcelosbrito.github.io/landing-page/" target="_blank" rel="noopener" size="small" color="primary">
+                  Live Demo 2
                 </Button>
               </CardActions> 
           </Card>
